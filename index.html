@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Todo List</title>
+	<link rel="stylesheet" href="css/master.css" />
+	<link rel="stylesheet" href="css/all.min.css" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
+	"/>
+</head>
+<body>
+	<div class="container">
+		<main class="app">
+			<section class="greeting">
+				<h2 class="title">
+					Hello, <input type="text" id="name" class="name" placeholder="Name here" />
+				</h2>
+			</section>
+			<section class="create-todo">
+				<h3>CREATE A TODO</h3>
+				<form id="new-todo-form">
+					<h4>What do you wanna to do today!</h4>
+					<input 
+						type="text" 
+						placeholder="your task"
+						name="content"
+						id="content"
+						class="coninp" />
+					
+					<h4>Pick a category</h4>
+					<div class="options">
+						<label>
+							<input type="radio" name="category" id="category1" value="business" /> 
+							<span class="bubble business"></span>
+							<i class="fa-solid fa-user-tie"></i>
+							<div>Business</div>
+						</label>
+						<label>
+							<input type="radio" name="category" id="category2" value="personal" />
+							<span class="bubble personal"></span>
+							<i class="fa-solid fa-person"></i>
+							<div>Personal</div>
+						</label>
+					</div>
+					<input type="submit" value="Add todo"  />
+				</form>
+			</section>
+			<section class="todo-list">
+				<h3>TODO LIST</h3>
+				<div class="list" id="todo-list"></div>
+			</section>
+		</main>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
